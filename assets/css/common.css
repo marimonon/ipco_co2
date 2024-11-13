@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* ベース定義 */
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "メイリオ", Meiryo, sans-serif;
+  line-height: 1.75;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+}
+
+a, button {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.u-left {
+  text-align: left !important;
+}
+
+.u-center {
+  text-align: center !important;
+}
+
+.u-right {
+  text-align: right !important;
+}
+
+.u-font-bold {
+  font-weight: bold !important;
+}
+
+.u-font-normal {
+  font-weight: normal !important;
+}
+
+.u-block {
+  display: block !important;
+}
+
+.u-inline-block {
+  display: inline-block !important;
+}
+
+.u-inline {
+  display: inline !important;
+}
+
+@media screen and (max-width: 767px) {
+  .u-block-sp {
+    display: block !important;
+  }
+  .u-inline-block-sp {
+    display: inline-block !important;
+  }
+  .u-inline-sp {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .u-block-pc {
+    display: block !important;
+  }
+  .u-inline-block-pc {
+    display: inline-block !important;
+  }
+  .u-inline-pc {
+    display: inline !important;
+  }
+}
+.u-nowrap {
+  white-space: nowrap !important;
+}
+
+@media screen and (max-width: 767px) {
+  .u-hidden-sp {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .u-hidden-pc {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background-color: #999;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.chart h2 {
+  font-size: 32px;
+}
+.chart h3 {
+  font-size: 24px;
+}
+.chart table {
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 767px) {
+  .chart tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.chart tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.chart__toptr {
+  background-color: #f0f0f0 !important;
+}
+.chart__head {
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .chart__head {
+    width: 100%;
+    border-left: none;
+    line-height: 2.4;
+  }
+}
+.chart__number {
+  font-size: 12px;
+}
+.chart__six {
+  font-size: 14px;
+  line-height: 1.25;
+  flex: 0;
+  min-width: 80px;
+  padding: 8px 0;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .chart__six {
+    min-width: 16%;
+  }
+}
+.chart td {
+  padding: 8px 12px;
+}
+@media screen and (max-width: 767px) {
+  .chart__item {
+    width: 100%;
+    border-left: none;
+  }
+}
+.chart__radio {
+  border-left: none;
+  border-right: none;
+}
+@media screen and (max-width: 767px) {
+  .chart__radio {
+    width: 16.5%;
+    border: none;
+  }
+}
+.chart input[type=radio] {
+  margin-right: 8px;
+}
+.chart__modal-click {
+  margin-left: 8px;
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.drawer {
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 300px;
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .is-drawer-active .drawer {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+.drawer__shade {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .is-drawer-active .drawer__shade {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .header__sp-menu {
+    display: none;
+  }
+}
+
+.sp-menu {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.sp-menu__bar-3, .sp-menu__bar-2, .sp-menu__bar-1 {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.sp-menu__bar-1 {
+  display: block;
+  top: 14px;
+  transform-origin: left;
+}
+.is-drawer-active .sp-menu__bar-1 {
+  transform: translateY(-4px) rotate(45deg) scaleX(1.4142);
+}
+
+.sp-menu__bar-2 {
+  display: block;
+  top: 24px;
+}
+.is-drawer-active .sp-menu__bar-2 {
+  transform: scaleX(0);
+}
+
+.sp-menu__bar-3 {
+  display: block;
+  top: 34px;
+  transform-origin: left;
+}
+.is-drawer-active .sp-menu__bar-3 {
+  transform: translateY(5px) rotate(-45deg) scaleX(1.4142);
+}
