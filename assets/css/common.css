@@ -176,6 +176,22 @@ ul {
 .chart tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
+.chart__info {
+  opacity: 0;
+  position: absolute;
+  z-index: -2;
+}
+.chart__info.-active {
+  display: block;
+  position: inherit;
+  opacity: inherit;
+}
+.chart__questions {
+  display: none;
+}
+.chart__questions.-active {
+  display: block;
+}
 .chart__toptr {
   background-color: #f0f0f0 !important;
 }
@@ -233,6 +249,9 @@ ul {
   margin-left: 8px;
   color: #0000ff;
   text-decoration: underline;
+}
+.chart__submit {
+  margin-top: 20px;
 }
 
 .drawer {
