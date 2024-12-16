@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>タイトル</title>
+	<meta name="description" content="ページの説明">
+	
+	<link rel="stylesheet" href="./assets/css/common.css">
+</head>
+<body class="page-home">
+<div class="wrapper">
+	<header class="header">
+		<div class="header__inner">
+			
+				<h1 class="header__logo">
+					<a href="/"><img src="//placehold.jp/200x50.png" alt=""></a>
+				</h1>
+			
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li><a href="" class="header__link">メニュー1</a></li>
+					<li><a href="" class="header__link">メニュー2</a></li>
+					<li><a href="" class="header__link">メニュー3</a></li>
+				</ul>
+			</nav>
+			<div class="header__sp-menu">
+				<button class="sp-menu" id="drawer_btn">
+					<span class="sp-menu__bar-1"></span>
+					<span class="sp-menu__bar-2"></span>
+					<span class="sp-menu__bar-3"></span>
+				</button>
+			</div>
+			<nav class="drawer" id="drawer">
+				<ul class="drawer__list">
+					<li><a href="" class="drawer__link">メニュー1</a></li>
+					<li><a href="" class="drawer__link">メニュー2</a></li>
+					<li><a href="" class="drawer__link">メニュー3</a></li>
+				</ul>
+			</nav>
+			<div class="drawer__shade" id="drawer_shade"></div>
+		</div>
+	</header>
+
+<div class="container">
+  塗料使用に伴うCO2排出量は、（塗料の年間使用量）×（塗料のCO2排出係数）で算定します。<br>
+  塗料の年間使用量は、塗料の種類ごとに1年間の使用量を合計します。<br>
+  塗料の種類ごとにCO2排出係数が異なりますので、塗料の種類ごとに年間CO2排出量を算定し、その合計が塗料使用に伴うCO2排出量です。<br>
+  塗料のCO2排出係数は塗料会社が提供してくれた場合はそのデータを用い、提供されない場合は環境省の産業連関表ベースの塗料のGHG排出原単位（物量ベース　2.30t-CO2eq/t）を用いて算定します。この場合は、塗料のCO2排出係数は塗料の種類に関係なく2.30t-CO2/tを使うことになります。算出結果が凡そのCO2排出量になりますが、塗料毎のCO2排出係数が提供されるまでの暫定的な算定になります。
+  また、金額ベースの排出原単位を用いてCO2排出量を算定することもできます。この場合価格変動でCO2排出量が増減することに注意が必要です。<br><br>
+  
+  出典：<a href="https://www.env.go.jp/earth/ondanka/supply_chain/gvc/files/SC_syousai_04_20230301.pdf" target="_blank" rel="noopener noreferrer">SC_syousai_04_20230301.pdf (env.go.jp)</a>（Ctrlキーを押しながらクリック）<br><br>
+  
+  また、あくまでもモデル塗料ですが、（一社）日本塗料工業会が試算した各種モデル塗料1kg製造時のCO2排出量（次表参照）を用いて算定することも可能です。
+</div>
+	<footer class="footer">
+	</footer>
+
+</div>
+<script src="./assets/js/common.js"></script>
+</body>
+</html>
