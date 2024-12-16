@@ -53,15 +53,17 @@
 					<div class="chart__modal-box"></div>
 					<div class="chart__modal-bg"></div>
 				</div>
-				<form target="hidden_iframe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeBAU3GLfCOgKZxQN53i7eIz2JmxeOPrDal8VlxaSws4Y9hRQ/formResponse" method="POST">
+				<form target="hidden_iframe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeBAU3GLfCOgKZxQN53i7eIz2JmxeOPrDal8VlxaSws4Y9hRQ/formResponse" method="POST" onsubmit="submitted=true;">
 					<div class="chart__info -active" data-info>
+						<p>工業塗装は、主に石油系の化学物質を基本とした塗料類を使用しています。これにより、工場内の安全衛生面や工場外への排出影響面から、マテリアルやエネルギーにおける脱炭素（カーボン・ニュートラル）への取り組みが注視されております。<br>
+							　コーティングコンソーシアムでは、次世代に向けてのサポートとして、実現可能な取り組みを提案しております。このたびは、特に温室効果ガス（主としてCO2）排出削減に取り組まれるために、この自社における工場分析によるチェックリストを活用いただき、「脱炭素（CO2排出量などを含む）」を実現していただければ幸いです。
+							</p>
 						<h2>注意事項等</h2>
 						<ul>
-							<li>このテストは...テキストが入りますテキストが入ります</li>
-							<li>テスト結果は...テキストが入りますテキストが入ります</li>
-							<li>個人情報の...テキストが入りますテキストが入ります</li>
-							<li>テキストが入りますテキストが入りますテキストが入ります</li>
-							<!-- <li><input type="checkbox"><a href="#">プライバシーポリシー</a>に同意する</li> -->
+							<li>・本アンケートに関する集計結果は、あくまで参考情報として提供されるものであり、正確性・完全性を保証するものではありません。</li>
+							<li>・回答の送信後は修正できませんので、送信前に内容をご確認ください。</li>
+							<li>・結果はメールにてPDFで送信させていただきます。</li>
+							<li>・ご提供いただいた回答は、統計的な処理を施し、調査・研究・報告書作成等に使用いたします。</li>
 						</ul>
 						<div class="chart__company">
 							<input type="text" placeholder="会社名" name="entry.679151083">
@@ -72,20 +74,22 @@
 						<div class="chart__email">
 							<input type="email" placeholder="メールアドレス" name="entry.7674255">
 						</div>
+						<div>
+							<input type="checkbox"><a href="#">プライバシーポリシー</a>に同意する
+						</div>
 						<div class="chart__submit">
-							<button class="btn" data-start>開始する</button>
+							<a class="btn" data-start>開始する</a>
 						</div>
 					</div>
 					<div class="chart__questions" data-quest>
 						<h2>Ａ. CO2排出状況の把握</h2>
-						地球温暖化防止のために各産業界が温室効果ガスの排出削減に取り組んでいますが、
-塗装工場においても二酸化炭素（CO2）の排出削減を推進するにあたって、
-現状のCO2の排出量の把握が必要です。<br>
-チェックリストに沿って、自社のCO２排出状況を確認しましょう<br
-						チェックリスト番号001～035は、塗装工場全体の年間CO２排出量算定に関するチェックです。　	
-						<h3>１． <span class="chart__ganre">塗装工場全体</span></h3>
+						工地球温暖化防止のために各産業界が温室効果ガスの排出削減に取り組んでいますが、業塗装工場においても二酸化炭素（CO2）の排出削減を推進するにあたって、現状のCO2排出量の把握が必要です。<br>
+チェックリストに沿って、自社のCO2排出状況を確認しましょう。<br>
+						<h3>１． <span class="chart__ganre">塗装工場全体のCO2排出量</span><a href="./1.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1)</a></h3>
+						チェックリスト番号001～035は、塗装工場全体の年間CO２排出量算定に関するチェックです。　
+	
 						<table class="chart__table" border="1">
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－１　燃料ガス消費に伴うCO2排出<a href="./1-1.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注１)</a></h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－１　燃料ガス消費に伴うCO2排出<a href="./1-1.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-1)</a></h4></th>
 								<th class="chart__six">5 実施し  <br> 
 									効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
@@ -206,7 +210,7 @@
 								</td>
 								
 							</tr>
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－２  電気消費に伴うCO2排出<a href="./1-2.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注２)</a></h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－２  電気消費に伴うCO2排出<a href="./1-2.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-2)</a></h4></th>
 								<th class="chart__six">5 実施し  <br> 
 									効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
@@ -327,7 +331,7 @@
 								</td>
 								
 							</tr>
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－３　塗料使用に伴うCO2排出<a href="./1-3.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注３)</a><h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－３　塗料使用に伴うCO2排出<a href="./1-3.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-3)</a><h4></th>
 								<th class="chart__six">5 実施し  <br> 効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
 								<th class="chart__six">3 実施<br>計画中</th>
@@ -447,8 +451,7 @@
 								</td>
 								
 							</tr>
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－４　溶剤使用に伴うCO2排出</h4><a href="./1-4.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注4
-								)</a><h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2">１－４　溶剤使用に伴うCO2排出</h4><a href="./1-4.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-4)</a><h4></th>
 								<th class="chart__six">5 実施し  <br> 効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
 								<th class="chart__six">3 実施<br>計画中</th>
@@ -568,7 +571,7 @@
 								</td>
 								
 							</tr>
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－５　助剤使用に伴うCO2排出<a href="./1-5.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注５)</a><h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－５　助剤使用に伴うCO2排出<a href="./1-5.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-5)</a><h4></th>
 								<th class="chart__six">5 実施し  <br> 効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
 								<th class="chart__six">3 実施<br>計画中</th>
@@ -688,7 +691,7 @@
 								</td>
 								
 							</tr>
-							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－６　廃棄物処理に伴うCO2排出<a href="./1-6.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注６)</a><h4></th>
+							<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>１－６　廃棄物処理に伴うCO2排出<a href="./1-6.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注1-6)</a><h4></th>
 								<th class="chart__six">5 実施し  <br> 効果を確認</th>
 								<th class="chart__six">4 実施<br>継続中</th>
 								<th class="chart__six">3 実施<br>計画中</th>
@@ -1133,7 +1136,7 @@
 								
 							</tr>
 						</table>
-						<h3>２． <span class="chart__ganre">塗装工程ごと</span></h3>
+						<h3>２． <span class="chart__ganre">塗装工程ごと<a href="./2.html" target="_blank" rel="noopener noreferrer" class="chart__modal-click" id="chart_modal1">(注2)</a></h3>
 						<table class="chart__table" border="1">
 						<!-- 1set -->
 						<tr class="chart__toptr"><th class="chart__head" colspan="2"><h4>２－１　前処理工程</h4></th>
@@ -4091,7 +4094,7 @@
 					</div>
 				</div>
 			</form>
-			<iframe name="hidden_iframe" id="hidden_iframe" style="width: 1000px; height: 1000px; display: none;"></iframe>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="width: 1000px; height: 1000px; display: none;" onload="if(submitted){window.location='./thanks.html';}"></iframe>
 		</article>
 		</div>
 	</main>

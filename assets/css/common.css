@@ -247,11 +247,17 @@ ul {
 }
 .chart__modal-click {
   margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
   color: #0000ff;
   text-decoration: underline;
 }
 .chart__submit {
   margin-top: 20px;
+}
+
+.close {
+  margin-top: 40px;
 }
 
 .drawer {
